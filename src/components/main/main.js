@@ -1,7 +1,8 @@
 import css from './main.module.scss'
-import { Board } from '../board/board'
+import { Board } from '../board/board/board'
 import { Routes, Route} from 'react-router-dom'
 import { TaskDetails } from '/Users/a1/kanban-board/src/components/board/task details/task_details.js'
+
 
 export const Main = props => {
     

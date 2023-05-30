@@ -1,5 +1,5 @@
 import css from './card.module.scss'
-import {Button} from '../../../shared/button'
+import {Button} from '../../../shared/button/button'
 import {useState} from 'react'
 import clsx from 'clsx'
 import {useNavigate} from "react-router-dom";

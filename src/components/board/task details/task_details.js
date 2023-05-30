@@ -1,8 +1,9 @@
 import css from './task_details.module.scss'
 import { useNavigate, useParams, useLocation,useMatch, Link } from 'react-router-dom'
-import {Button} from '/Users/a1/kanban-board/src/components/shared/button.js'
+import {Button} from '../../shared/button/button.js'
 import {useEffect, useState} from "react";
 import {createContext,useContext} from "react";
+import remove from '../../shared/icons/icon-remove.svg'
 
 
 
@@ -35,7 +36,7 @@ export const TaskDetails = props => {
                 
                     
                     <Button className={css.btnClose} onClick={navigateBack}>
-                        <img src={require('/Users/a1/kanban-board/src/components/shared/icon-remove.svg').default} 
+                        <img src={remove} 
                        alt="remove"/></Button>
                 <div className={css.title}>{task.title}</div>
     

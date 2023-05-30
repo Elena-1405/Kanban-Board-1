@@ -1,12 +1,12 @@
 import Scrollbars from 'react-custom-scrollbars-2'
 import { Card } from './card/card' 
 import css from './list.module.scss'
-import { Button } from '/Users/a1/kanban-board/src/components/shared/button.js'
+import { Button } from '../../shared/button/button'
 import { useState } from 'react'
 import { LIST_TYPES, LIST_COPY } from '/Users/a1/kanban-board/src/config.js'
 import { Link } from 'react-router-dom'
-import {addNewTask} from '/Users/a1/kanban-board/src/components/board/list/card/card.js'
-import { Select } from '/Users/a1/kanban-board/src/components/select/select.js'
+import { Select } from '../../select/select'
+import remove from '../../shared/icons/icon-remove.svg'
 
 export function List(props){
     const {title, type, tasks, task, addNewTask, noFiltredTasks, setTasks} = props
@@ -48,7 +48,7 @@ export function List(props){
                                 <p key={task.id} className={css.title}>
                             {task.title}</p></Link>
                             <Button className={css['button-remove']} onClick={taskRemove}>
-                        <img src={require('/Users/a1/kanban-board/src/components/shared/icon-remove.svg').default} 
+                        <img src={remove} 
                         height={14} width={15} alt="remove"/>
                         </Button>
                            </div>

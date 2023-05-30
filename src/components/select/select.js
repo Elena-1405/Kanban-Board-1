@@ -1,4 +1,4 @@
-import css from '/Users/a1/kanban-board/src/components/select/select.module.scss';
+import css from '../select/select.module.scss';
 import { LIST_TYPES } from '../../config';
 
 
@@ -50,24 +50,3 @@ export const Select = props => {
     )
 }
 
-
-export default Select;
-
-
-{/* <div className={css.footer}>
-                        
-                        {type === LIST_TYPES.BACKLOG && isFormVisible && (
-                            <Card formSubmit={formSubmit} />
-                        )}
-                        {type === LIST_TYPES.BACKLOG && (
-                            <button className={css.button} onClick={handleClick}>+ Add card</button>)}</div>
-                        
-                        
-                        <div className={css.selectCard}>
-                        {type !== LIST_TYPES.BACKLOG && isSelectVisible && (
-                        <Select {...props}  handleSelectVisible={handleSelectVisible}/>
-                        )}
-                        
-                        {type !== LIST_TYPES.BACKLOG && 
-                        <button  className={css.button} onClick={handleSelectVisible}> + Add card </button>
-                        } */}
